@@ -33,30 +33,28 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
 :root {
+  /**
+   * colors
+   */
+  --main-color: #16404D;
+  --cadet-blue-crayola: #A6CDC6;
+  --gold-web-golden: #FFF6B3;
+  --vivid-sky-blue: #FBF5DD;
+  --midnight-blue: #16404D;
+  --minion-yellow: #DDA853;
+  --independence: #16404D;
+  --orange-soda: #DDA853;
+  --space-cadet: #155E95;
+  --fiery-rose: #DDA853;
+  --klein-blue: #16404D;
+  --bluetiful: #A6CDC6;
+  --glaucous: #A6CDC6;
+  --manatee: #A6CDC6;
+  --rufous: #DDA853;
+  --black: #16404D;
+  --white: #FBF5DD;
 
-    /**
-     * colors
-     */
-     --main-color:hsl(225, 24%, 27%);
-
-    --cadet-blue-crayola: hsl(240, 10%, 70%);
-    --gold-web-golden: hsl(50, 100%, 54%);
-    --vivid-sky-blue: hsl(196, 84%, 63%);
-    --midnight-blue: hsl(231, 83%, 25%);
-    --minion-yellow: hsl(50, 100%, 64%);
-    --independence: hsl(225, 24%, 27%);
-    --orange-soda: hsl(7, 96%, 61%);
-    --space-cadet: hsl(243, 23%, 18%);
-    --fiery-rose: hsl(353, 83%, 65%);
-    --klein-blue: hsl(230, 80%, 39%);
-    --bluetiful: hsl(222, 88%, 55%);
-    --glaucous: hsl(230, 52%, 63%);
-    --manatee: hsl(254, 7%, 65%);
-    --rufous: hsl(2, 85%, 35%);
-    --black: hsl(0, 0%, 0%);
-    --white: hsl(0, 0%, 100%);
   /* Basic Education Section Styles */
 
   
