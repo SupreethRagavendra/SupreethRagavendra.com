@@ -70,7 +70,7 @@
           <li><a href="#certificates" class="navbar-link" data-nav-link>Certificates</a></li>
           <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
          <!-- Inside the navigation -->
-         <li><a href="#" class="btn btn-primary" id="download-resume-btn">Download Resume</a></li>
+         <li><a href="https://drive.google.com/file/d/1Ub_icqLayT0mLx_wWejwx77vJ1e2hXR8/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" id="download-resume-btn">Download Resume</a></li>
 
         </ul>
       </nav>
@@ -142,7 +142,7 @@
 
             <div class="btn-group">
               <a href="#contact" class="btn btn-primary blue">Contact Me</a>
-              <a href="https://drive.google.com/file/d/1xDgGlAUTnBCrtjy6yu6bkMWAvMMmOpfK/view?usp=sharing" target="_blank" rel="noopener" class="btn" style="border:1px solid rgba(255,255,255,0.15)">Download Resume</a>
+              <a href="https://drive.google.com/file/d/1Ub_icqLayT0mLx_wWejwx77vJ1e2hXR8/view?usp=sharing" target="_blank" rel="noopener" class="btn" style="border:1px solid rgba(255,255,255,0.15)">Download Resume</a>
             </div>
           </div>
         </div>
@@ -255,7 +255,7 @@
         <div class="project-card">
           <img
             src="kasc.png" loading="lazy"
-            alt="project1"
+            alt="KASC Hall Management App"
             class="project-image"
           />
           <div class="project-content">
@@ -280,7 +280,7 @@
         <div class="project-card">
           <img
             src="https://res.cloudinary.com/do40wkay9/image/upload/v1736522166/e27c62140935825.624af8b4ce37e_qzilpl.jpg" loading="lazy"
-            alt="project2"
+            alt="Amazon Clone E-commerce Platform"
             class="project-image"
           />
           <div class="project-content">
@@ -305,7 +305,7 @@
         <div class="project-card">
           <img
             src="https://res.cloudinary.com/do40wkay9/image/upload/v1736523957/task-management-system-screenshot-1_ubqz1x.png" loading="lazy"
-            alt="project2"
+            alt="Task Manager Application"
             class="project-image"
           />
           <div class="project-content">
@@ -329,7 +329,7 @@
 
         <div class="project-card">
           <img
-            src="images/projects/tic-tac-toe-ai.jpg" loading="lazy"
+            src="images/projects/tic-tac-toe-ai.webp" loading="lazy"
             alt="AI Tic-Tac-Toe Game"
             class="project-image"
           />
@@ -352,7 +352,7 @@
 
         <div class="project-card">
           <img
-            src="images/projects/agriculture-platform.jpg" loading="lazy"
+            src="images/projects/agriculture-new.png" loading="lazy"
             alt="Aromaticroot Agriculture Platform"
             class="project-image"
           />
@@ -375,7 +375,7 @@
 
         <div class="project-card">
           <img
-            src="images/projects/travel-booking.jpg" loading="lazy"
+            src="images/projects/travel.png" loading="lazy"
             alt="Goodway Travel Booking Website"
             class="project-image"
           />
@@ -398,7 +398,7 @@
 
         <div class="project-card">
           <img
-            src="images/projects/college-portal.jpg" loading="lazy"
+            src="images/projects/20250925_2157_Smart College Portal_simple_compose_01k60v4h6jekqv3nqv1c5wabbv.png" loading="lazy"
             alt="Smart College Placement Learning Portal"
             class="project-image"
           />
@@ -706,7 +706,10 @@
       <p class="section-text" style="text-align:center">Prefer email? Use the form below and I’ll reply within 24–48 hours.</p>
       <br>
 
-      <form action="https://formspree.io/f/xbllqkoy" method="POST" class="contact-form" novalidate aria-describedby="contact-hint">
+      <form action="https://formspree.io/f/xanpndqw" method="POST" class="contact-form" novalidate aria-describedby="contact-hint" id="contact-form">
+        <input type="hidden" name="_to" value="supreethvennila@gmail.com">
+        <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+        <input type="hidden" name="_next" value="https://formspree.io/thanks?language=en">
         <div id="contact-hint" class="visually-hidden">All fields are required.</div>
         <div class="form-grid">
           <label class="form-field">
@@ -726,7 +729,11 @@
             <textarea name="message" rows="5" required aria-required="true" placeholder="Tell me about your project or role"></textarea>
           </label>
         </div>
-        <button type="submit" class="btn btn-primary blue" aria-label="Send message">Send Message</button>
+        <div id="form-status" class="form-status" style="display: none;"></div>
+        <button type="submit" class="btn btn-primary blue" aria-label="Send message" id="submit-btn">
+          <span class="submit-text">Send Message</span>
+          <span class="submit-loading" style="display: none;">Sending...</span>
+        </button>
       </form>
 
       <ul class="contact-list" role="list">

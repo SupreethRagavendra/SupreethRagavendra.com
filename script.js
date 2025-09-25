@@ -431,3 +431,76 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+/**
+ * Contact Form Handler
+ */
+(function setupContactForm() {
+  const form = document.getElementById('contact-form');
+  const statusDiv = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitText = submitBtn.querySelector('.submit-text');
+  const submitLoading = submitBtn.querySelector('.submit-loading');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitText.style.display = 'none';
+    submitLoading.style.display = 'inline';
+    statusDiv.style.display = 'none';
+
+    try {
+      const formData = new FormData(form);
+      
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // Success - show custom success message
+        statusDiv.innerHTML = `
+          <div class="form-success">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+          </div>
+        `;
+        statusDiv.className = 'form-status success';
+        statusDiv.style.display = 'block';
+        
+        // Reset form
+        form.reset();
+        
+        // Scroll to success message
+        statusDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      // Error - show error message
+      statusDiv.innerHTML = `
+        <div class="form-error">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>Oops! Something went wrong</h3>
+          <p>Please try again or contact me directly at <a href="mailto:supreethvennila@gmail.com">supreethvennila@gmail.com</a></p>
+        </div>
+      `;
+      statusDiv.className = 'form-status error';
+      statusDiv.style.display = 'block';
+    } finally {
+      // Reset button state
+      submitBtn.disabled = false;
+      submitText.style.display = 'inline';
+      submitLoading.style.display = 'none';
+    }
+  });
+})();
