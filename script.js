@@ -32,19 +32,22 @@ const backTopBtn = document.querySelector("[data-back-to-top]");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 100) {
     header.classList.add("active");
-    backTopBtn.classList.add("active");
+    if (backTopBtn) backTopBtn.classList.add("active");
   } else {
     header.classList.remove("active");
-    backTopBtn.classList.remove("active");
+    if (backTopBtn) backTopBtn.classList.remove("active");
   }
 });
 
 const downloadCVBtn = document.getElementById("download-resume-btn");
 
-downloadCVBtn.addEventListener("click", function () {
-  // Replace the URL below with the actual link to your CV
-  window.open("https://drive.google.com/file/d/1xDgGlAUTnBCrtjy6yu6bkMWAvMMmOpfK/view?usp=sharing", "_blank", "noopener,noreferrer");
-});
+if (downloadCVBtn) {
+  downloadCVBtn.addEventListener("click", function (e) {
+    // Prevent the default link behavior since we have href in HTML
+    // The href will handle the navigation, this is just for analytics/tracking if needed
+    console.log('Resume download initiated');
+  });
+}
 document.addEventListener('DOMContentLoaded', function () {
     const animatedName = document.getElementById('animated-name');
     const spans = animatedName.querySelectorAll('span');
@@ -94,56 +97,56 @@ window.addEventListener("load", function () {
     {
       key: 'KASC-Hall App',
       title: 'KASC-Hall App',
-      desc: 'Android app to streamline hall bookings. Built with Java, XML, and Firebase. Centralized approvals and reduced manual steps.',
-      image: 'kasc.png',
+      desc: 'Android app built with Java, XML, and Firebase to streamline hall bookings and reduce paperwork. Features centralized approvals and automated notifications.',
+      image: 'images/projects/kasc.png',
       live: 'https://apkfab.com/kasc-hall/com.kasc.hall/apk',
       code: 'https://github.com/SupreethRagavendra/KASC-Hall-Management-App'
     },
     {
       key: 'Amazon Clone',
       title: 'Amazon Clone',
-      desc: 'Non-functional UI clone of Amazon for practice in layout and responsive design using HTML & CSS.',
-      image: 'https://res.cloudinary.com/do40wkay9/image/upload/v1736522166/e27c62140935825.624af8b4ce37e_qzilpl.jpg',
+      desc: 'E-commerce website clone built with HTML and CSS. Non-functional UI that replicates Amazon\'s design for layout and responsive design practice.',
+      image: 'images/projects/amazon-clone-original.jpg',
       live: 'https://amazonclone24222.netlify.app/',
       code: 'https://github.com/SupreethRagavendra/Amazon_Clone'
     },
     {
       key: 'Task Manager',
       title: 'Task Manager',
-      desc: 'Responsive Task Manager built with HTML, CSS, and Bootstrap. Focused on clean UX and simple state handling.',
-      image: 'https://res.cloudinary.com/do40wkay9/image/upload/v1736523957/task-management-system-screenshot-1_ubqz1x.png',
+      desc: 'Simple task management application created using HTML, CSS, and Bootstrap. Features clean UI and responsive design for task organization.',
+      image: 'images/projects/task-manager-original.png',
       live: 'https://main--musical-piroshki-9afb6d.netlify.app/',
       code: 'https://github.com/SupreethRagavendra/Task_manager'
     },
     {
       key: 'AI Tic-Tac-Toe Game',
       title: 'AI Tic-Tac-Toe Game',
-      desc: 'Advanced AI game using Minimax algorithm with alpha-beta pruning for unbeatable gameplay. Features multiple game modes including Human vs AI and Human vs Human with adjustable difficulty levels. Achieved 75% reduction in computation time through algorithm optimization.',
-      image: 'images/projects/tic-tac-toe-ai.jpg',
+      desc: 'AI-powered game with unbeatable algorithm using Minimax with alpha-beta pruning. Features multiple game modes including Human vs AI and Human vs Human with adjustable difficulty levels.',
+      image: 'images/projects/AI Tic Tac Toe.png',
       live: 'https://colab.research.google.com/drive/1Pw9EL0YhKNBC6dSJDpA1feObekBDMhhz',
       code: 'https://colab.research.google.com/drive/1Pw9EL0YhKNBC6dSJDpA1feObekBDMhhz'
     },
     {
       key: 'Aromaticroot (Tezfo)',
       title: 'Aromaticroot Agriculture Platform',
-      desc: 'Redesigned agriculture products platform serving 50+ monthly users with 40% faster load times. Implemented WebP image format conversion, advanced CSS animations, and SEO strategies that boosted search rankings by 60%. Focus on user experience and performance optimization.',
-      image: 'images/projects/agriculture-platform.jpg',
+      desc: 'Agriculture platform redesign with 40% faster load times and SEO optimization. Redesigned for 50+ monthly users, achieving improved performance through WebP image format conversion and code optimization.',
+      image: 'images/projects/Herbal Products.png',
       live: 'https://aromaticroot.tezfo.com/',
       code: '#'
     },
     {
       key: 'Goodwayonlineservice (Tezfo)',
       title: 'Goodway Travel Booking Platform',
-      desc: 'Comprehensive travel booking website handling 50+ concurrent users with integrated WhatsApp-based inquiry system processing 100+ daily requests. Features responsive wireframes designed using AI-powered Figma plugins, advanced CSS animations, SEO optimization, and cross-browser compatibility across 8+ browsers.',
-      image: 'images/projects/travel-booking.jpg',
+      desc: 'Travel booking website with WhatsApp integration handling 50+ concurrent users. Features responsive design, WhatsApp-based inquiry system processing 100+ daily requests, and cross-browser compatibility.',
+      image: 'images/projects/Travel.png',
       live: 'https://goodwayonlineservice.com/',
       code: '#'
     },
     {
       key: 'Smart College Placement Learning Portal',
       title: 'Smart College Placement Learning Portal',
-      desc: 'Currently in development - A comprehensive learning portal designed to enhance college placement preparation. Will feature interactive learning modules, practice tests, mock interviews, progress tracking, and personalized study plans for students to improve their placement success rates.',
-      image: 'images/projects/college-portal.jpg',
+      desc: 'College placement preparation portal with learning modules and progress tracking. Currently in development - will feature interactive learning modules, practice tests, and personalized study plans.',
+      image: 'images/projects/educational.png',
       live: '#',
       code: '#'
     }
