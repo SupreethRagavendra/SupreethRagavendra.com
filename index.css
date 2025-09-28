@@ -190,6 +190,7 @@ span {
   color: var(--text-color);
 }
 
+/* Old about styles - now using style.css for about section
 .about {
   display: flex;
   flex-direction: column;
@@ -197,6 +198,7 @@ span {
   align-items: center;
   background-color: var(--snd-bg-color);
 }
+*/
 
 .heading {
   text-align: center;

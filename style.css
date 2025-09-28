@@ -924,9 +924,31 @@ footer {
   \*-----------------------------------*/
   
   .about {
-    background-color: var(--space-cadet);
+    background: linear-gradient(135deg, var(--space-cadet) 0%, var(--midnight-blue) 50%, var(--space-cadet) 100%);
     padding: 80px 0;
     color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><circle cx="20" cy="20" r="1"/></g></g></svg>');
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .about .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
   .about .section-subtitle {
@@ -947,15 +969,20 @@ footer {
     color: var(--white);
     text-align: center;
     margin-bottom: 60px;
+    background: linear-gradient(135deg, var(--white) 0%, var(--cadet-blue-crayola) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .about-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
   
   .about-text {
@@ -966,6 +993,7 @@ footer {
     padding: 40px;
     position: relative;
     overflow: hidden;
+    height: fit-content;
   }
   
   .about-text::before {
@@ -1025,6 +1053,8 @@ footer {
     display: flex;
     gap: 16px;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 8px;
   }
   
   .about .btn-outline {
@@ -1049,6 +1079,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    height: fit-content;
+    align-self: start;
   }
   
   .about .stat-card {
@@ -1056,11 +1088,16 @@ footer {
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 16px;
-    padding: 24px 20px;
+    padding: 28px 20px;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .about .stat-card::before {
@@ -1076,9 +1113,10 @@ footer {
   }
   
   .about .stat-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     background: linear-gradient(145deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
     border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
   }
   
   .about .stat-card:hover::before {
@@ -1118,6 +1156,7 @@ footer {
     .about-grid {
       grid-template-columns: 1fr;
       gap: 40px;
+      padding: 0 16px;
     }
     
     .about-text {
@@ -1130,8 +1169,9 @@ footer {
     }
     
     .about-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+      margin-top: 24px;
     }
   }
   
@@ -1144,12 +1184,26 @@ footer {
       font-size: 2rem;
     }
     
+    .about-grid {
+      padding: 0 12px;
+    }
+    
     .about-text {
       padding: 24px 20px;
     }
     
     .about-text .section-text {
       font-size: var(--fs-6);
+    }
+    
+    .about .btn-group {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .about-cards {
+      grid-template-columns: 1fr;
+      gap: 12px;
     }
     
     .about .stat-card {
