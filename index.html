@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Supreeth Ragavendra S | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio showcasing projects and technical skills. Currently pursuing Master's in Computer Applications.">
+  <meta name="keywords" content="Supreeth Ragavendra, MCA Student, Software Engineer, Java, Android Development, Coimbatore, Portfolio, JavaScript, Firebase">
+  <meta name="author" content="Supreeth Ragavendra S">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://supreethragavendra.com/">
+  
+  <!-- Performance Optimizations -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supreethragavendra.com/">
+  <meta property="og:title" content="Supreeth Ragavendra S | Software Developer Portfolio">
+  <meta property="og:description" content="Portfolio showcasing projects and technical skills.">
+  <meta property="og:image" content="https://res.cloudinary.com/do40wkay9/image/upload/v1736523957/task-management-system-screenshot-1_ubqz1x.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Supreeth Ragavendra Portfolio">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Supreeth Ragavendra S">
+  <meta name="twitter:description" content="Portfolio showcasing projects and technical expertise.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/do40wkay9/image/upload/v1736523957/task-management-system-screenshot-1_ubqz1x.png">
+  
+  <!-- Theme and Branding -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Supreeth Ragavendra S",
+    "description": "Currently pursuing Master's in Computer Applications with a focus on software development",
+    "url": "https://supreethragavendra.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/supreeth-ragavendra-s-203144244/",
+      "https://github.com/SupreethRagavendra",
+      "https://www.instagram.com/just____supreeth/"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "KIT - Kalaignar Karunanidhi Institute of Technology"
+    },
+    "knowsAbout": ["Java", "JavaScript", "Android Development", "Web Development", "Firebase", "HTML", "CSS", "Bootstrap", "Python", "MySQL", "Laravel"]
+  }
+  </script>
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="preload" href="assets/js/script.js" as="script">
+  
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="top">
+  
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" data-back-to-top aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Header -->
+  <header class="header" data-header role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <h1 class="logo">Supreeth Ragavendra</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" aria-controls="primary-navigation" aria-expanded="false" data-nav-toggle-btn>
+        <i class="fas fa-bars menu-icon"></i>
+        <i class="fas fa-times close-icon"></i>
+      </button>
+
+      <nav id="primary-navigation" class="navbar" role="navigation" aria-label="Primary">
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+          <li><a href="#education" class="navbar-link" data-nav-link>Education</a></li>
+          <li><a href="#projects" class="navbar-link" data-nav-link>Projects</a></li>
+          <li><a href="#skills" class="navbar-link" data-nav-link>Skills</a></li>
+          <li><a href="#certificates" class="navbar-link" data-nav-link>Certificates</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+          <li><a href="https://drive.google.com/file/d/1Ub_icqLayT0mLx_wWejwx77vJ1e2hXR8/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+
+      <!-- HERO Section -->
+      <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+              <div class="hero-content">
+              <p class="hero-label">Welcome to my portfolio</p>
+              <h1 class="hero-title">Hi, I'm <span class="text-gradient">Supreeth Ragavendra</span></h1>
+              <p class="hero-subtitle">MCA Student & Aspiring Software Engineer</p>
+              <p class="hero-description">
+                Building modern, user‑friendly applications for web and Android with a passion for creating scalable solutions and exceptional user experiences.
+              </p>
+
+              <div class="hero-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Projects</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Certificates</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Internships</span>
+                  </div>
+                </div>
+        
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                  <i class="fas fa-paper-plane me-2"></i>Get In Touch
+                </a>
+                <a href="https://drive.google.com/file/d/1Ub_icqLayT0mLx_wWejwx77vJ1e2hXR8/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline">
+                  <i class="fas fa-download me-2"></i>Download CV
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/supreeth-ragavendra-s-203144244/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                <a href="mailto:supreethvennila@gmail.com" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                <a href="https://github.com/SupreethRagavendra" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                <a href="https://www.instagram.com/just____supreeth/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="800">
+            <div class="hero-image-wrapper">
+              <div class="hero-image-bg"></div>
+              <img src="assets/images/pic2.jpg" loading="eager" alt="Supreeth Ragavendra" class="hero-image">
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      
+      <!-- ABOUT Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title" id="about-title">My Journey in Technology</h2>
+          <p class="section-description">
+            Creating digital solutions that make a difference
+            </p>
+          </div>
+          
+        <div class="about-content">
+          <div class="row g-4">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="about-text">
+                <p>
+                I am an MCA student and aspiring software engineer passionate about building reliable, scalable solutions that solve real-world problems. With a foundation in computer science from my BSc CT studies and hands-on experience from internships and personal projects, I transform ideas into functional applications.
+              </p>
+                <p>
+                Currently pursuing my Master's in Computer Applications at KIT, I'm focused on developing advanced programming skills and modern software engineering practices. My journey is driven by continuous learning and the desire to create meaningful digital experiences.
+              </p>
+              </div>
+            </div>
+            </div>
+            
+          <div class="row g-4 mt-2">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="feature-title">Academic Excellence</h3>
+                <p class="feature-text">Strong foundation with Bachelor's in Computer Technology, consistently achieving excellent results.</p>
+                  </div>
+                </div>
+                
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">Performance Focus</h3>
+                <p class="feature-text">Creating efficient applications with optimized load times and responsive interfaces.</p>
+                  </div>
+                </div>
+                
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-lightbulb"></i>
+                  </div>
+                <h3 class="feature-title">Problem Solving</h3>
+                <p class="feature-text">Analytical thinking and creative solutions applied to real-world development scenarios.</p>
+                </div>
+              </div>
+            </div>
+            
+          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+            <a href="#contact" class="btn btn-primary me-3">
+                <i class="fas fa-paper-plane me-2"></i>Let's Connect
+              </a>
+            <a href="#projects" class="btn btn-outline">
+                <i class="fas fa-eye me-2"></i>View My Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION Section -->
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Education</span>
+          <h2 class="section-title" id="education-title">My Academic Journey</h2>
+        </div>
+        
+        <div class="education-timeline">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-marker">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - 2021</span>
+              <h3 class="timeline-title">Commerce with Informatics Practices</h3>
+              <p class="timeline-institution">Kendriya Vidyalaya Coimbatore</p>
+              <p class="timeline-description">
+                Completed schooling at KV Coimbatore, which provided me with a strong foundation in both commerce and basic computer skills.
+              </p>
+              </div>
+            </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-marker">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 - 2024</span>
+              <h3 class="timeline-title">Bachelor of Science in Computer Technology</h3>
+              <p class="timeline-institution">Kongunadu Arts and Science College</p>
+              <p class="timeline-description">
+                Completed undergraduate studies in BSc Computer Technology, gaining comprehensive knowledge in programming, software development, and various technologies.
+              </p>
+              </div>
+            </div>
+            
+          <div class="timeline-item active" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-marker">
+                <i class="fas fa-code"></i>
+              </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3 class="timeline-title">Master of Computer Applications</h3>
+              <p class="timeline-institution">KIT - Kalaignar Karunanidhi Institute of Technology</p>
+              <p class="timeline-description">
+                Currently pursuing MCA, focusing on advanced programming concepts, software engineering principles, data structures and algorithms, and modern development practices.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Featured Work & Achievements</h2>
+          <p class="section-description">
+            Explore my portfolio of web and mobile applications, showcasing technical expertise and creative problem-solving
+          </p>
+          </div>
+          
+          <!-- Project Filter Navigation -->
+          <div class="project-filter-nav" data-aos="fade-up" data-aos-delay="100">
+            <button class="project-filter-btn active" data-filter="all">All Projects</button>
+            <button class="project-filter-btn" data-filter="web">Web Apps</button>
+            <button class="project-filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="project-filter-btn" data-filter="internship">Internship</button>
+          </div>
+          
+          <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- KASC Hall Management App -->
+          <div class="project-card" data-category="mobile personal" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/kasc.png" loading="lazy" alt="KASC Hall Management App" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Android</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://apkfab.com/kasc-hall/com.kasc.hall/apk" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/SupreethRagavendra/KASC-Hall-Management-App" target="_blank" class="project-link" title="View Code">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Mobile App</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">KASC Hall Management</h3>
+                <p class="project-description">Android app for streamlined hall booking with centralized approvals and automated notifications.</p>
+              </div>
+            </div>
+            
+          <!-- Amazon Clone -->
+          <div class="project-card" data-category="web personal" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/amazon-clone-original.jpg" loading="lazy" alt="Amazon Clone" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Responsive</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://amazonclone24222.netlify.app/" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/SupreethRagavendra/Amazon_Clone" target="_blank" class="project-link" title="View Code">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Web Clone</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">Amazon E-commerce Clone</h3>
+                <p class="project-description">Pixel-perfect e-commerce UI clone showcasing advanced CSS layout techniques and responsive design.</p>
+              </div>
+            </div>
+            
+            <!-- Task Manager -->
+          <div class="project-card" data-category="web personal" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/task-manager-original.png" loading="lazy" alt="Task Manager" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Bootstrap</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://main--musical-piroshki-9afb6d.netlify.app/" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/SupreethRagavendra/Task_manager" target="_blank" class="project-link" title="View Code">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Productivity</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">Task Management System</h3>
+                <p class="project-description">Clean, intuitive task management application with Bootstrap components and responsive design.</p>
+              </div>
+            </div>
+            
+          <!-- AI Tic-Tac-Toe -->
+          <div class="project-card" data-category="web personal" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/AI Tic Tac Toe.png" loading="lazy" alt="AI Tic-Tac-Toe" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">AI/ML</span>
+                  <span class="tag">Minimax</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://colab.research.google.com/drive/1Pw9EL0YhKNBC6dSJDpA1feObekBDMhhz" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://colab.research.google.com/drive/1Pw9EL0YhKNBC6dSJDpA1feObekBDMhhz" target="_blank" class="project-link" title="View Code">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">AI Game</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">AI Tic-Tac-Toe Game</h3>
+                <p class="project-description">Intelligent game with unbeatable AI using Minimax algorithm and alpha-beta pruning optimization.</p>
+              </div>
+            </div>
+            
+          <!-- Aromaticroot Platform -->
+          <div class="project-card" data-category="web internship" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/Herbal Products.png" loading="lazy" alt="Aromaticroot Platform" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">SEO</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://aromaticroot.tezfo.com/" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Agriculture</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">Aromaticroot Platform</h3>
+                <p class="project-description">Agriculture platform redesign achieving 40% faster load times and enhanced SEO optimization.</p>
+              </div>
+            </div>
+            
+          <!-- Goodway Travel -->
+          <div class="project-card" data-category="web internship" data-aos="fade-up" data-aos-delay="350">
+            <div class="project-image-wrapper">
+                <img src="assets/images/projects/Travel.png" loading="lazy" alt="Goodway Travel Platform" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">WhatsApp API</span>
+                  <span class="tag">Responsive</span>
+                  </div>
+                <div class="project-links">
+                    <a href="https://goodwayonlineservice.com/" target="_blank" class="project-link" title="Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Travel</span>
+                <span class="project-status live">Live</span>
+                </div>
+              <h3 class="project-title">Goodway Travel Booking</h3>
+                <p class="project-description">Travel booking platform with WhatsApp integration handling 50+ concurrent users and 100+ daily requests.</p>
+              </div>
+            </div>
+            
+          <!-- Smart College Placement Portal -->
+          <div class="project-card" data-category="web personal" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/educational.png" loading="lazy" alt="Smart College Placement Portal" class="project-image">
+                <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="tag">Laravel</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" style="opacity: 0.5; cursor: not-allowed;" title="In Development" onclick="return false;">
+                      <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            <div class="project-info">
+              <div class="project-header">
+                  <span class="project-category">Education</span>
+                <span class="project-status" style="background-color: rgba(245, 158, 11, 0.1); color: #f59e0b;">In Development</span>
+                </div>
+              <h3 class="project-title">Smart College Placement Portal</h3>
+                <p class="project-description">Comprehensive placement preparation platform with learning modules, practice tests, and progress tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  <!-- SKILLS Section -->
+    <section class="section skills-section" id="skills">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">My Technical Arsenal</h2>
+          <p class="section-description">
+            Technologies and tools I work with to create amazing digital experiences
+          </p>
+      </div>
+      
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/html.png" loading="lazy" alt="HTML5" class="skill-icon">
+          </div>
+            <h3 class="skill-name">HTML5</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/css.png" loading="lazy" alt="CSS3" class="skill-icon">
+          </div>
+            <h3 class="skill-name">CSS3</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/javascript.png" loading="lazy" alt="JavaScript" class="skill-icon">
+          </div>
+            <h3 class="skill-name">JavaScript</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/bootstrap.png" loading="lazy" alt="Bootstrap" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Bootstrap</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/java.png" loading="lazy" alt="Java" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Java</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/python.png" loading="lazy" alt="Python" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Python</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/sql.png" loading="lazy" alt="SQL" class="skill-icon">
+          </div>
+            <h3 class="skill-name">SQL</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/mysql.svg" loading="lazy" alt="MySQL" class="skill-icon">
+          </div>
+            <h3 class="skill-name">MySQL</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/android-studio.svg" loading="lazy" alt="Android Studio" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Android Studio</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/firebase.png" loading="lazy" alt="Firebase" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Firebase</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="550">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/git.svg" loading="lazy" alt="Git/GitHub" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Git/GitHub</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/aws.png" loading="lazy" alt="AWS" class="skill-icon">
+          </div>
+            <h3 class="skill-name">AWS</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="650">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/figma.svg" loading="lazy" alt="Figma" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Figma</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/docker.svg" loading="lazy" alt="Docker" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Docker</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="750">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/php.svg" loading="lazy" alt="PHP" class="skill-icon">
+          </div>
+            <h3 class="skill-name">PHP</h3>
+        </div>
+        
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="skill-icon-wrapper">
+              <img src="assets/images/laravel.svg" loading="lazy" alt="Laravel" class="skill-icon">
+          </div>
+            <h3 class="skill-name">Laravel</h3>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES Section -->
+    <section class="section certificates-section" id="certificates" aria-labelledby="certificates-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Certificates</span>
+          <h2 class="section-title" id="certificates-title">My Certifications & Achievements</h2>
+        </div>
+        
+        <div class="certificates-grid">
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="certificates/img-1.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img-1.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="150">
+            <img src="certificates/img-2.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img-2.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="certificates/img-3.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img-3.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="250">
+            <img src="certificates/img-4.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img-4.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="certificates/img5.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img5.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="350">
+            <img src="certificates/img6.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img6.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+            <img src="certificates/img7.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img7.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="450">
+            <img src="certificates/img9.jpg" loading="lazy" alt="Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/img9.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="500">
+            <img src="certificates/intership1.jpg" loading="lazy" alt="Internship Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/intership1.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+        
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="550">
+            <img src="certificates/intership2.jpg" loading="lazy" alt="Internship Certificate">
+            <div class="certificate-overlay">
+              <button class="view-certificate" onclick="openCertificateModal('certificates/intership2.jpg')">
+                <i class="fas fa-search-plus"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CONTACT Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title" id="contact-title">Get In Touch</h2>
+          <p class="section-description">
+            Have a project in mind or want to discuss opportunities? Feel free to reach out!
+          </p>
+        </div>
+      
+      <div class="contact-content">
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="contact-info-wrapper">
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+          </div>
+                  <div class="contact-info-content">
+                    <h3>Address</h3>
+                    <p>127/B, Sasthiri Nagar, Urumandampalayam<br>Coimbatore, Tamil Nadu 641029, India</p>
+              </div>
+              </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-envelope"></i>
+              </div>
+                  <div class="contact-info-content">
+                    <h3>Email</h3>
+                    <a href="mailto:supreethvennila@gmail.com">supreethvennila@gmail.com</a>
+              </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-phone"></i>
+              </div>
+                  <div class="contact-info-content">
+                    <h3>Phone</h3>
+                    <a href="tel:+918667489988">+91 8667489988</a>
+              </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <form action="https://formspree.io/f/xanpndqw" method="POST" class="contact-form" id="contact-form">
+                <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+                <input type="hidden" name="_next" value="https://formspree.io/thanks?language=en">
+                
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name">
+  </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required placeholder="How can I help?">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or role"></textarea>
+                </div>
+
+                <div id="form-status" class="form-status" style="display: none;"></div>
+
+                <button type="submit" class="btn btn-primary w-100" id="submit-btn">
+                  <span class="submit-text">Send Message</span>
+                  <span class="submit-loading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- SERVICES Section -->
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Services</span>
+          <h2 class="section-title" id="services-title">What I Offer</h2>
+          <p class="section-description">
+            Comprehensive solutions tailored to meet your digital needs
+          </p>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                  <h3 class="service-title">Web Development</h3>
+                  <p class="service-description">
+                Creating responsive, user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks to deliver exceptional digital experiences.
+                  </p>
+                  <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                    <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    <li><i class="fas fa-check"></i> Cross-browser Compatibility</li>
+                  </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                  <h3 class="service-title">Android App Development</h3>
+                  <p class="service-description">
+                Developing native Android applications using Java and modern development practices to create seamless mobile experiences for users.
+                  </p>
+                  <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Native Android Apps</li>
+                    <li><i class="fas fa-check"></i> Firebase Integration</li>
+                    <li><i class="fas fa-check"></i> Material Design UI</li>
+                  </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-pencil-alt"></i>
+                </div>
+                  <h3 class="service-title">Technical Consulting</h3>
+                  <p class="service-description">
+                Offering professional consulting services, including technical documentation, architecture planning, and strategic technology recommendations.
+                  </p>
+                  <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Technical Documentation</li>
+                    <li><i class="fas fa-check"></i> Architecture Planning</li>
+                    <li><i class="fas fa-check"></i> Technology Strategy</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+        <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="footer-logo">Supreeth Ragavendra</h3>
+          <p class="footer-tagline">Building the future, one line of code at a time.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/supreeth-ragavendra-s-203144244/" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/SupreethRagavendra" target="_blank" class="footer-social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/just____supreeth/" target="_blank" class="footer-social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:supreethvennila@gmail.com" class="footer-social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+                </div>
+              </div>
+              
+        <div class="footer-links-wrapper">
+          <div class="footer-links-group">
+              <h4>Quick Links</h4>
+              <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-group">
+            <h4>Resources</h4>
+            <ul>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#certificates">Certificates</a></li>
+              <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Supreeth Ragavendra. All rights reserved.</p>
+      </div>
+      </div>
+  </footer>
+ 
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="certificate-modal" onclick="closeCertificateModal()">
+    <button class="certificate-close" onclick="closeCertificateModal()" aria-label="Close modal">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="certificate-modal-content" onclick="event.stopPropagation()">
+        <img id="certificateImage" src="" alt="Certificate" class="certificate-modal-image">
+      <button class="certificate-download" onclick="downloadCertificate(); event.stopPropagation();">
+        <i class="fas fa-download"></i> Download Certificate
+          </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- AOS Animation Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- Custom JS Link -->
+  <script src="assets/js/script.js" defer></script>
+
+</body>
+
+</html>
