@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://supreethragavendra.com/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/pic2.jpg</image:loc>
+      <image:title>Supreeth Ragavendra S - Software Developer Portfolio</image:title>
+      <image:caption>MCA Student & Software Developer specializing in Java, Android Development, and Web Development</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#about</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Education Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#education</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Projects Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#projects</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/kasc.png</image:loc>
+      <image:title>KASC Hall Management App</image:title>
+      <image:caption>Android app for streamlined hall booking with centralized approvals</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/amazon-clone-original.jpg</image:loc>
+      <image:title>Amazon E-commerce Clone</image:title>
+      <image:caption>Pixel-perfect e-commerce UI clone showcasing advanced CSS layout techniques</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/task-manager-original.png</image:loc>
+      <image:title>Task Management System</image:title>
+      <image:caption>Clean, intuitive task management application with Bootstrap components</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/AI Tic Tac Toe.png</image:loc>
+      <image:title>AI Tic-Tac-Toe Game</image:title>
+      <image:caption>Intelligent game with unbeatable AI using Minimax algorithm</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/Herbal Products.png</image:loc>
+      <image:title>Aromaticroot Platform</image:title>
+      <image:caption>Agriculture platform redesign achieving 40% faster load times</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/Travel.png</image:loc>
+      <image:title>Goodway Travel Booking</image:title>
+      <image:caption>Travel booking platform with WhatsApp integration</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/assets/images/projects/educational.png</image:loc>
+      <image:title>Smart College Placement Portal</image:title>
+      <image:caption>Comprehensive placement preparation platform with learning modules</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Skills Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#skills</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Certificates Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#certificates</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img-1.jpg</image:loc>
+      <image:title>Professional Certificate 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img-2.jpg</image:loc>
+      <image:title>Professional Certificate 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img-3.jpg</image:loc>
+      <image:title>Professional Certificate 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img-4.jpg</image:loc>
+      <image:title>Professional Certificate 4</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img5.jpg</image:loc>
+      <image:title>Professional Certificate 5</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img6.jpg</image:loc>
+      <image:title>Professional Certificate 6</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img7.jpg</image:loc>
+      <image:title>Professional Certificate 7</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/img9.jpg</image:loc>
+      <image:title>Professional Certificate 8</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/intership1.jpg</image:loc>
+      <image:title>Internship Certificate 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://supreethragavendra.com/certificates/intership2.jpg</image:loc>
+      <image:title>Internship Certificate 2</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#contact</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://supreethragavendra.com/#services</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
